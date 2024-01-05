@@ -13,3 +13,5 @@ This code is used to evaluate existing machine learning backdoor attack and defe
 We provide a `demo.sh` to execute a test case, which will run the experiments according to the flowchart. If you want to conduct other experiments, please modify the parameters at the beginning of the file. Before adjusting the parameters, please refer to `config.py` to understand the required parameters for each method. Before using `-poison_type cl`, make sure that you have executed `./data/cl/setup.sh`.
 
 There may still be many potential bugs in this code. If you encounter any issues while using the code, please feel free to contact yichics02@gmail.com.
+
+The code has been publicly synchronized on Github. Click [here](https://github.com/YichiCS/Backdoor_Evaluation_Platform) to view.
