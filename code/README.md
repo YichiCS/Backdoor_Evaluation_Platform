@@ -7,7 +7,9 @@ This code framework refers to the process handling and partial method implementa
 This code is used to evaluate existing machine learning backdoor attack and defense methods, currently supporting the following:
 
 **Attack**: BadNet, Blend, Clean-Label, Dynamic, ISSBA, SIG, TaCT, WaNet, Trojan, Adaptive-Blend, Adaptive-Patch
+
 **Defense**: Activation Clustering, Spectral Signature, SCAn, Strip, Confuse Training
+
 **Dataset**: CIFAR10
 
 We provide a `demo.sh` to execute a test case, which will run the experiments according to the flowchart. If you want to conduct other experiments, please modify the parameters at the beginning of the file. Before adjusting the parameters, please refer to `config.py` to understand the required parameters for each method. Before using `-poison_type cl`, make sure that you have executed `./data/cl/setup.sh`.
