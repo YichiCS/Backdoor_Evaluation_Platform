@@ -15,7 +15,7 @@ def get_cleansed_set_indices_dir(args):
     return dir
 
 
-def get_model_name(args, cleanse=False):
+def get_model_name(args, cleanse=False, defense=False):
 
     model_arch = args.arch
     poison_type = args.poison_type
@@ -181,6 +181,9 @@ def get_dataset_dir(args, split='train'):
 
         else:
             raise NotImplementedError()
+            
+        if not os.path.exists(os.path.join(config.dataset_dir, args.dataset)):
+            os.mkdir(os.path.join(config.dataset_dir, args.dataset))
 
         dataset_dir = os.path.join(config.dataset_dir, args.dataset, dir)
             
